@@ -44,12 +44,11 @@ export default function App() {
               <Text style={styles.repository}>{project.title}</Text>
 
               <View style={styles.techsContainer}>
-                {project.techs > 0 &&
-                  project.techs.map((tech) => (
-                    <Text key={tech} style={styles.tech}>
-                      {tech}
-                    </Text>
-                  ))}
+                {project.techs.map((tech) => (
+                  <Text key={tech} style={styles.tech}>
+                    {tech}
+                  </Text>
+                ))}
               </View>
 
               <View style={styles.likesContainer}>
